@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Book Store</h1>
+
+    <!-- Search Bar -->
+    <div id="search-bar">
+        <label for="search">Search:</label>
+        <input type="text" id="search" oninput="filterBooks()" placeholder="Enter book title">
+    </div>
+
+    <div id="book-list">
+        <!-- Display the list of books here -->
+        <!-- Each book should have an image, description, rate, and a button to initiate the order process -->
+
+        <!-- Book 1 -->
+        <div class="book-entry" data-id="1">
+            <img src=data:image/jpeg;base64,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 alt="Book 1">
+            <h3>foundation of data Science</h3>
+            <p>Description: book for computer science Student studied on 3rd Semster in stella Marys College.</p>
+            <p>Rate: Rs:300</p>
+            <button onclick="showOrderForm(1)">Order</button>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-entry" data-id="2">
+            <img src=https://th.bing.com/th?id=OIP.Bo-HRLoEO0ahTTDr8CbpLwHaGe&w=267&h=233&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2 alt="Book 2">
+            <h3>Data Structers</h3>
+            <p>Description: book for computer science Student studied on 3rd Semster in stella Marys College.</p>
+            <p>Rate: RS:250</p>
+            <button onclick="showOrderForm(2)">Order</button>
+        </div>
+      <div class="book-entry" data-id="3">
+            <img src=https://th.bing.com/th?id=OIP.Bo-HRLoEO0ahTTDr8CbpLwHaGe&w=267&h=233&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2 alt="Book 2">
+            <h3>Data Structers</h3>
+            <p>Description: book for computer science Student studied on 3rd Semster in stella Marys College.</p>
+            <p>Rate: RS:250</p>
+            <button onclick="showOrderForm(3)">Order</button>
+        </div>
+        <!-- Add more books as needed -->
+
+    </div>
+
+    <div id="order-form" style="display: none;">
+        <h2>Order Details</h2>
+        <form id="order-details-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" required>
+                <option value="cash-on-delivery">Cash on Delivery</option>
+                <option value="paytm">Paytm</option>
+            </select><br>
+
+            <button type="button" onclick="placeOrder()">Place Order</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
