@@ -3,13 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Store</title>
+    <title class="title">Book Store</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Book Store</h1>
+    <header>
+        <div class="header-container">
+            <div class="logo">Book Store</div>
+            <div class="drawer-icon" onclick="toggleDrawer()">☰</div>
+        </div>
+        <div class="drawer">
+            <div class="drawer-item">Container 1</div>
+            <div class="drawer-item">Container 2</div>
+            <div class="drawer-item">Container 3</div>
+            <div class="drawer-item">Container 4</div>
+            <div class="drawer-item">Container 5</div>
+            <div class="drawer-item">Container 6</div>
+            <div class="drawer-item">Container 7</div>
+            <div class="drawer-item">Container 8</div>
+        </div>
+    </header>
 
-    <!-- Search Bar -->
+    <div class="main-content">
+       <!-- Search Bar -->
     <div id="search-bar">
         <label for="search">Search:</label>
         <input type="text" id="search" oninput="filterBooks()" placeholder="Enter book title">
@@ -65,6 +81,8 @@
             <button type="button" onclick="placeOrder()">Place Order</button>
         </form>
     </div>
+
+    
 
     <script src="script.js"></script>
 </body>
