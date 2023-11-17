@@ -1,13 +1,10 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 
 header {
     background-color: #333;
     color: white;
     padding: 10px;
+   
     display: flex;
     
     align-items: center;
@@ -20,15 +17,19 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 50px;
+    height:100px;
     font-weight: bold;
-    margin-right: 20px;
+    margin-left:480px;
+    margin-top:35px;
+
 }
 
 .drawer-icon {
-    font-size: 24px;
+    font-size: 60px;
     cursor: pointer;
     justify-content:flex-start;
+    
    
 }
 
@@ -38,15 +39,20 @@ header {
     position: absolute;
     top: 60px;
     justify-content:flex-start;
-    background-color: #333;
-    padding: 10px;
+    background-color: #B8B8B8;
+    padding: 5px;
     z-index: 1;
-    
+    text-align:center;
+    width:250px;
+    height:400px;
+    justify-content:space-evenly;
+
 }
 
 .drawer-item {
-    color: white;
+    color:#333;
     padding: 10px;
+    font-size:20px;
     cursor: pointer;
 }
 
@@ -57,7 +63,7 @@ header {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    background-color: #d6e7ee;
     margin: 0;
     padding: 0;
 }
@@ -65,7 +71,7 @@ body {
 h1 {
     text-align: center;
     color: #333;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 #search-bar {
@@ -87,12 +93,12 @@ h1 {
 }
 
 .book-entry {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
-    padding: 20px;
-    width: 300px;
+    padding: 10px;
+    width: 150px;
     text-align: center;
 }
 
